@@ -1,94 +1,118 @@
 /* colors
-morado claro: 695F9F,
-morado oscuro: 2F3081, */
+morado claro: 7D68E9, 
+morado oscuro: 31338A, */
 
 .flex-hero {
-  width: 100%;
-  height: 400px;
-  display: flex;
-  align-items: center;
+	width: 100%;
+	height: 600px;
+	display: flex;
+	align-items: center;
 }
 
 .container-background-bogota {
-  width: 100%;
-  height: 80%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  border-radius: 40px;
+	width: 100%;
+	height: 80%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	border-radius: 40px;
 }
 
 .flex-data-bogota {
-  height: 100%;
-  width: 35%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
+	height: 100%;
+	width: 35%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
 }
 
 .flex-locations {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
 }
 
 .title-bogota {
-  color: white;
-  font-size: 25px;
-  font-family: 'Lato', sans-serif;
-  margin: 0 0 0 10px;
+	color: white;
+	font-size: 25px;
+	margin: 0 0 0 10px;
 }
 
 .container-fixed {
-  position: absolute;
-  left: 0;
-  top: 110px;
-  border-radius: 0 20px 20px 0;
+	position: absolute;
+	left: 0;
+	top: 300px;
+	transform: translateY(-50%);
+	border-radius: 0 20px 20px 0;
 }
 
 .container-icon-blue {
-  background: #695F9F;
-  height: 90px;
-  width: 90px;
-  border-radius: 0 20px 20px 20px;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  z-index: 1;
+	background: #31338a;
+	height: 90px;
+	width: 90px;
+	border-radius: 0 20px 20px 20px;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	z-index: 1;
 }
 
 .container-icon-purple {
-  background: #2F3081;
-  height: 100px;
-  width: 90px;
-  border-radius: 0 0 20px 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  top: -20px;
-  z-index: 0;
-  box-shadow: 10px 10px 50px rgba(0, 0, 0, .35);
+	background: #7d68e9;
+	height: 100px;
+	width: 90px;
+	border-radius: 0 0 20px 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	top: -20px;
+	z-index: 0;
+	box-shadow: 10px 10px 50px rgba(0, 0, 0, 0.35);
 }
 
 .title-temperatura {
-  color: white;
-  font-size: 25px;
-  margin: 10px 0 0 0;
-  font-weight: 700;
-  font-family: 'Lato', sans-serif;
+	color: white;
+	font-size: 25px;
+	margin: 10px 0 0 0;
+	font-weight: 700;
+	font-family: 'Lato', sans-serif;
 }
 
 .title-weather {
-  color: white;
-  font-size: 10px;
-  font-family: 'Lato', sans-serif;
-  margin: 0;
-  width: 100%;
-  margin: 0;
-  text-align: center;
+	color: white;
+	font-size: 10px;
+	margin: 0;
+	width: 100%;
+	margin: 0;
+	text-align: center;
+}
+
+@media (max-width: 768px) {
+	.flex-hero {
+		width: 100%;
+		height: 350px;
+		display: flex;
+		align-items: flex-start;
+	}
+
+	.container-background-bogota {
+		border-radius: 0;
+	}
+
+	.flex-data-bogota {
+		width: 100%;
+	}
+
+	.container-fixed {
+		position: absolute;
+		left: 0;
+		top: 250px;
+		transform: translateY(-50%);
+		border-radius: 0 20px 20px 0;
+	}
 }

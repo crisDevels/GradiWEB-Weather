@@ -1,0 +1,93 @@
+.location-card {
+	background: linear-gradient(270deg,#f2f2f2, white);
+	border-radius: 15px;
+	overflow: hidden;
+	margin-bottom: 20px;
+	box-shadow: 10px 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.location-card__weather {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.location-card__meta {
+	display: flex;
+}
+
+.location-card__img {
+	width: 100px;
+	height: 100px;
+	border-radius: 10px;
+	object-fit: cover;
+	background: #dbe5f3;
+}
+
+.location-card__description {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 70%;
+}
+
+.location-card__celcius {
+	position: relative;
+	padding-right: 10px;
+	margin: 0;
+	margin-right: 40px;
+	font-size: 40px;
+}
+
+.location-card__celcius::before {
+	content: '°c';
+	font-size: 20px;
+	position: absolute;
+	top: 0;
+	right: -10px;
+	color: #757575;
+}
+
+.location-card__celcius::after {
+	content: '';
+	position: absolute;
+	height: 100%;
+	width: 1px;
+	right: -20px;
+	background: #757575;
+}
+
+.location-card__celcius span {
+	font-size: 20px;
+	color: #757575;
+}
+
+.location-card__city {
+	margin: 0;
+}
+
+.location-card__country {
+	margin: 0;
+}
+
+.location-card__meta {
+	display: flex;
+	justify-content: space-between;
+	padding: 0 20px;
+	color: #757575;
+}
+
+@media (max-width: 426px) {
+	.location-card__img {
+		width: 80px;
+		height: 80px;
+	}
+
+	.location-card__celcius {
+    position: relative;
+    padding-right: 10px;
+    margin: 0;
+    margin-right: 40px;
+    font-size: 20px;
+	}
+}

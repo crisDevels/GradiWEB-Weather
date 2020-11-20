@@ -1,0 +1,20 @@
+.add-container {
+	display: grid;
+	place-content: center;
+	border: 1px dashed #757575;
+	border-radius: 30px;
+	padding-top: 20px;
+	background-color: white;
+}
+
+.add-container__button {
+	padding: 10px 40px;
+	border-radius: 30px;
+	text-align: center;
+	color: #7d68e9;
+	background-color: rgba(125, 104, 233, 0.2);
+}
+
+.add-container__img {
+	width: 200px;
+}

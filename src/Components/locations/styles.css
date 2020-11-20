@@ -1,0 +1,15 @@
+.location-wrapper {
+	position: relative;
+}
+
+.location-container {
+	position: absolute;
+	top: -40%;
+	width: 80%;
+}
+
+@media (max-width: 768px) {
+	.location-container {
+		width: 100%;
+	}
+}
