@@ -1,0 +1,62 @@
+/* colors
+morado claro: 695F9F,
+morado oscuro: 2F3081, */
+
+.title-days {
+  color: #2F3081;
+  font-size: 35px;
+  font-weight: 300;
+  margin: 0 0 40px 0;
+  font-family: 'Lato', sans-serif;
+}
+
+.strong-days {
+  font-weight: 800;
+}
+
+.ul-days {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.flex-day-details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 250px;
+  height: 80px;
+  margin: 10px 0;
+  border-radius: 20px;
+  box-shadow: 3px 3px 15px rgba(0, 0, 0, .25);
+}
+
+.max-min-temp {
+  height: 100%;
+  width: 40%;
+  background: #DBE5F3;
+  color: #757575;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: .5s ease;
+}
+
+.max-min-temp:hover {
+  background: #695F9F;
+  color: white;
+}
+
+.p-weather-days {
+  color: #2F3081;
+  font-size: 16px;
+  font-weight: 300;
+  font-family: 'Lato', sans-serif;
+}
+
+.p-temp-days {
+  font-size: 12px;
+  font-weight: 700;
+  font-family: 'Lato', sans-serif;
+}
