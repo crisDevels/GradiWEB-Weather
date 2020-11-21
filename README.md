@@ -1,6 +1,6 @@
-GradiWEB - weather 👨‍💼
+GradiWEB - weather 🌤
 
-Críterios
+Criterios
 
 Se evidencia el uso de CSS, HTML (jsx), ReactJS  (librería de JavaScript). Además, la intención era desarrollar el proyecto mediante las variadas posiblidades que React ofrece como:
 -Clases
@@ -17,6 +17,6 @@ Se tomo en cuenta aspectos como:
 
 Para compilar de manera local:
 
-git clone 
-npm i
-npm run start
+1. git clone --branch main
+2. npm i
+3. npm run start
