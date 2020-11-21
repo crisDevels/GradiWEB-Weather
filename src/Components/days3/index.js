@@ -23,7 +23,7 @@ class DaysBogota extends React.Component {
 		});
 		try {
 			const res = await fetch(
-				'http://api.openweathermap.org/data/2.5/forecast?q=bogota&units=metric&cnt=3&appid=230a2d842e9f8d8478b59881cc9e3568'
+				'http://api.openweathermap.org/data/2.5/forecast?q=Bogota,CO&cnt=3&units=metric&appid=230a2d842e9f8d8478b59881cc9e3568'
 			);
 			const data = await res.json();
 

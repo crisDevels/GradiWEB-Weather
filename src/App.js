@@ -1,9 +1,13 @@
-import React, { Fragment } from 'react';
+import React from 'react';
+import  useSWR from 'swr'
 import styled from 'styled-components';
 import DaysBogota from './Components/days3';
-import WeatherBogota from './Components/weatherBogota';
+import WeatherBogotaF from './Components/weatherBogota';
 import PlaceToVisit from './Components/placeToVisit';
 import Locations from './Components/locations';
+import WeatherBogota from './Components/weatherBogota';
+
+import loadingGIF from './loading.gif'
 
 const ForecastWrapper = styled.div`
 	display: grid;
@@ -18,19 +22,25 @@ const ForecastWrapper = styled.div`
 		max-width: 80vw;
 	}
 `;
-class App extends React.Component {
-	render() {
-		return (
-			<Fragment>
-				<WeatherBogota />
-				<ForecastWrapper>
-					<DaysBogota />
-					<PlaceToVisit />
-					<Locations />
-				</ForecastWrapper>
-			</Fragment>
-		);
-	}
-}
 
-export default App;
+const fetcher = (...args) => fetch(...args).then(res => res.json())
+
+export const App = ()=> {
+
+  const { data, error } = useSWR('http://api.openweathermap.org/data/2.5/weather?q=Bogota&units=metric&appid=230a2d842e9f8d8478b59881cc9e3568', fetcher)
+
+  if (error) return <div>failed to load</div>
+  if (!data) return <div className='flex-loading'><img src={loadingGIF} alt='loading gif' width='100px' height='100px'/></div>
+
+	
+	return (
+		<div className='fade-content'>
+			<WeatherBogotaF {...data} />
+			<ForecastWrapper>
+			<DaysBogota />
+			<PlaceToVisit />
+			<Locations />
+			</ForecastWrapper>
+		</div>
+	);
+}
