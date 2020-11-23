@@ -35,7 +35,7 @@ export const App = ()=> {
 	
 	return (
 		<div className='fade-content'>
-			<WeatherBogotaF {...data} />
+			<WeatherBogota />
 			<ForecastWrapper>
 			<DaysBogota />
 			<PlaceToVisit />
