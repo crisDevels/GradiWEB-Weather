@@ -23,15 +23,7 @@ const ForecastWrapper = styled.div`
 	}
 `;
 
-const fetcher = (...args) => fetch(...args).then(res => res.json())
-
 export const App = ()=> {
-
-  const { data, error } = useSWR('http://api.openweathermap.org/data/2.5/weather?q=Bogota&units=metric&appid=230a2d842e9f8d8478b59881cc9e3568', fetcher)
-
-  if (error) return <div>failed to load</div>
-  if (!data) return <div className='flex-loading'><img src={loadingGIF} alt='loading gif' width='100px' height='100px'/></div>
-
 	
 	return (
 		<div className='fade-content'>
